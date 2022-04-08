@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Game Shop
+
+{% endblock title %}
+
+{% block content %}
+<div class="all_games_with_info">
+    <h1>
+        All Games :
+    </h1>
+    {% for game in game_list %}
+    <div class="game">
+
+        <h2>{{ game.title }}</h2>
+        
+        <p>The game was added by "{{ game.owner }}" {{ game.created }}</p>
+        
+        <p>Last updated: {{ game.updated }}</p>
+        
+        <h3>Description</h3> <p>{{ game.description }}</p>
+        
+        </div>
+        
+        {% endfor %}
+</div>
+{% endblock content %}
