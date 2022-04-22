@@ -13,9 +13,25 @@ Game Shop
         All Games :
     </h1>
     </center>
+    <div class="nav">
+        <h1>
+            Game Shop
+        </h1>
+    <div class="login-logout-reg-nav">
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">
+            Logout
+        </a>
+        {% else %}
+        <a href="{% url 'login' %}">
+            Log into the website
+        </a>
+        {% endif %}
+    </div>
+    </div>
     {% for game in game_list %}
     <div class="game">
-        <img class="image" src="{{i.image.url}}">
+        <img class="image" src="{{game.image.url}}">
         <h2><a href="{{ game.get_absolute_url }}">{{ game.title }}</a></h2>
         <p class="game-info">The game was added by "{{ game.owner }}" {{ game.created }} </p>
         <p class="game-info">Last updated: {{ game.updated }}</p>

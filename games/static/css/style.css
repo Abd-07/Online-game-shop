@@ -8,8 +8,8 @@ body{
     margin-left: 40px;
 }
 .image{
-    width: 80%;
-    height: 80%;
+    width: 45%;
+    height: 45%;
     
 }
 .left {
@@ -55,3 +55,45 @@ body{
 .detail_view_all_characteristics{
     color:rgb(255, 208, 0)
 }
+.login-form input[type=submit]{
+    font-weight:bold;
+    background-color: cornflowerblue;
+    color:cornsilk;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: auto;
+}
+.login-form label{
+    display:block;
+    font: size 20px;
+}
+.login-form input,textarea {
+    margin-bottom: 10px;
+    border:0;
+    padding: 6px 10px;
+    font-size: 20px;
+    width:30%;
+}
+.login-heading {
+    font-weight:normal;
+    border-bottom: 1px solid blue;
+    color:yellow;
+
+}
+.login-para {
+    font-size: 20px;
+    font-weight: bold;
+    color:yellow;
+}
+.login-form{
+    color:yellow;
+}
+.nav h1 {
+    font-weight: normal;
+    color: blueviolet;
+    display: inline;
+    }
+.login-logout-reg-nav a {
+    text-decoration: none;
+    color: rgb(51, 51, 240);
+    }

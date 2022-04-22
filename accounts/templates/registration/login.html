@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Entry to the website
+{% endblock title %}
+
+{% block content %}
+<h1 class="login-heading">
+    Entry to the website
+</h1>
+<p class="login-para">
+    Use the following form to enter the website:
+</p>
+<div class="login-form">
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <p>
+            <input type="submit" value="Enter the website">
+        </p>
+    </form>
+</div>
+{% endblock content %}
