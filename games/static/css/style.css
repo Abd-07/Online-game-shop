@@ -1,12 +1,49 @@
 body{
     background-color: aqua;
+    margin-left:20%;
+    margin-right:20%;
 }
 .all_games_with_info{
     margin-top: 65px;
     margin-left: 40px;
 }
 .image{
-    width: 2%;
-    height: 2%;
+    width: 80%;
+    height: 80%;
     
+}
+.left {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+}
+.right {
+    width: 80%;
+    margin-left: 6%;
+    padding-top: 0.01%;
+}
+.description{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.game{
+    border: darkblue 5px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: lightgreen;
+    text-align: center;
+}
+.game h2{
+    border-bottom: violet 6px double;
+    color: darkviolet;
+}
+.game h3{
+    color:darkgreen;
+}
+.game-info{
+    font-size: smaller;
+    margin: 0;
+    font-style: italic;
 }

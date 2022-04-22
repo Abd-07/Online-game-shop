@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.urls import reverse
 
 class Game(models.Model):
     title=models.CharField(max_length=50)
@@ -12,3 +13,5 @@ class Game(models.Model):
     image = models.ImageField(blank=True)
     def __str__(self):
         return f'{self.title}'
+    def get_absolute_url(self):
+        return reverse('game_detail',args=[self.slug])
