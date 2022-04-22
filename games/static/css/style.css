@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: black;
     margin-left:20%;
     margin-right:20%;
 }
@@ -25,25 +25,33 @@ body{
 .description{
     margin-top: 5%;
     margin-bottom: 5%;
+    color:#BADAEC
 }
 .game{
-    border: darkblue 5px solid;
+    border:#f2820a 5px solid;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: lightgreen;
+    background-color: yellow;
     text-align: center;
 }
 .game h2{
-    border-bottom: violet 6px double;
+    border-bottom: rgb(198, 43, 43) 6px double;
     color: darkviolet;
 }
 .game h3{
-    color:darkgreen;
+    color:rgb(0, 139, 252);
 }
 .game-info{
     font-size: smaller;
     margin: 0;
     font-style: italic;
+}
+.p_title{
+    font-size:280%;
+    color:white;
+}
+.detail_view_all_characteristics{
+    color:rgb(255, 208, 0)
 }
