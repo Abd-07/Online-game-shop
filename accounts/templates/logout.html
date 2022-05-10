@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Entry to the website
+{% endblock title %}
+
+{% block content %}
+<div class="logout_text">
+<h1>
+    Logout
+</h1>
+<p>
+    You have been successfully logged out.
+</p>
+</div>
+<div class="login-form">
+    <form method="GET" action="http://127.0.0.1:8000">
+        {% csrf_token %}
+        {{form.as_p}}
+        <p>
+            <input type="submit" value="Go to home">
+            </input>
+        </p>
+    </form>
+</div>
+{% endblock content %}

@@ -7,6 +7,9 @@ Game Shop
 <h1 class="game-detail-title-1">
     {{game.title}}
 </h1>
+<p class="game-detail-image">
+    <img class="image" src="{{game.image.url}}">
+</p>
 <p class="game-detail-description">
     Description:
     {{game.description}}
@@ -25,9 +28,6 @@ Game Shop
 </p>
 <p class="game-detail-updated">
     Last Updated: {{game.updated}}
-</p>
-<p class="game-detail-image">
-    {{game.image}}
 </p>
 </div>
 {% endblock content %}

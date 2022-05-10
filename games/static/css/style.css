@@ -97,3 +97,17 @@ body{
     text-decoration: none;
     color: rgb(51, 51, 240);
     }
+.profile_pic{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.logout_text{
+    color:yellow
+}
+.sign_up_form_page{
+    color:yellow;
+}
+.signup-heading{
+    border-bottom: 1px solid blue;
+}

@@ -7,7 +7,11 @@
 <meta charset="UTF-8">
 <link rel="shortcut icon" href="{% static 'images/icon0.ico' %}" type="image/png">
 <title>{% block title %}{% endblock title %}</title>
-
+<img src="{% static 'images/profile.png' %}" class="profile_pic" alt="profile" width="45" height="45">
+<a href='http://127.0.0.1:8000/accounts/login/'><button class="login_page">Login</button></a>
+<a href='http://127.0.0.1:8000/accounts/logout/'><button class="logout_page">Logout</button></a>
+<a href='http://127.0.0.1:8000/accounts/signup'><button class="register_page">Register</button></a>
+<a href='http://127.0.0.1:8000'><button class="home_page">Home</button></a>
 </head>
 
 <body>
