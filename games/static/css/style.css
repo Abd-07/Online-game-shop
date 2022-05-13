@@ -55,7 +55,7 @@ body{
 .detail_view_all_characteristics{
     color:rgb(255, 208, 0)
 }
-.login-form input[type=submit]{
+.login-form input[type=submit], .password-change-form input[type=submit]{
     font-weight:bold;
     background-color: cornflowerblue;
     color:cornsilk;
@@ -63,24 +63,24 @@ body{
     font-size: 20px;
     width: auto;
 }
-.login-form label{
+.login-form label, .password-change-form label{
     display:block;
     font: size 20px;
 }
-.login-form input,textarea {
+.login-form input,textarea, .password-change-form input{
     margin-bottom: 10px;
     border:0;
     padding: 6px 10px;
     font-size: 20px;
     width:30%;
 }
-.login-heading {
+.login-heading, .password-change-heading{
     font-weight:normal;
     border-bottom: 1px solid blue;
     color:yellow;
 
 }
-.login-para {
+.login-para, .password-change-para{
     font-size: 20px;
     font-weight: bold;
     color:yellow;
@@ -110,4 +110,10 @@ body{
 }
 .signup-heading{
     border-bottom: 1px solid blue;
+}
+.password-change-heading{
+    color:yellow
+}
+.password-change-form{
+    color:yellow
 }

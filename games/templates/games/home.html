@@ -20,7 +20,7 @@ Game Shop
     <div class="login-logout-reg-nav">
         {% if user.is_authenticated %}
         <h1 class="welcome">
-        Welcome {{ user.first_name }}!
+        Welcome {{ user.username }}!
         </h1>
         <a href="{% url 'logout' %}">
             Logout
